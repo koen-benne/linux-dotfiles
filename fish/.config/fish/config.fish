@@ -9,7 +9,7 @@ alias xi="sudo xbps-install"
 alias xr="sudo xbps-remove"
 alias npm="pnpm"
 alias spt="spotify-tui"
-alias ioslack="/home/koen/scripts/ioslack.sh & && disown"
+alias ioslack="/home/koen/.scripts/ioslack.sh & && disown"
 alias lg="lazygit"
 alias typioca="~/Documents/builds/typioca/execs/typioca-linux-amd64"
 
