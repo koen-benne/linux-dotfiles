@@ -153,6 +153,4 @@ riverctl csd-filter-add app-id "gedit"
 riverctl default-layout rivertile
 rivertile -view-padding 6 -outer-padding 6
 
-riverctl spawn 'wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/wpa_supplicant.conf'
-riverctl spawn 'swaybg -i $HOME/Images/bg.jpeg'
-riverctl spawn '/usr/libexec/polkit-mate-authentication-agent-1'
+riverctl spawn "~/.config/river/autostart.sh"

@@ -12,9 +12,11 @@ alias spt="spotify-tui"
 alias ioslack="/home/koen/.scripts/ioslack.sh & && disown"
 alias lg="lazygit"
 alias typioca="~/Documents/builds/typioca/execs/typioca-linux-amd64"
+alias nvide="neovide --multigrid"
 
 fish_add_path $HOME'/.local/bin/'
 fish_add_path $HOME'/.platformsh/bin'
+fish_add_path $HOME'/.cargo/bin'
 
 # pnpm
 set -gx PNPM_HOME "/home/koen/.local/share/pnpm"
