@@ -3,6 +3,7 @@ if status is-interactive
 end
 
 set -gx EDITOR nvim
+set -gx FZF_DEFAULT_OPTS "--height 40% --layout=reverse --border"
 
 set fish_greeting
 
@@ -13,7 +14,13 @@ alias spt="spotify-tui"
 alias ioslack="/home/koen/.scripts/ioslack.sh & && disown"
 alias lg="lazygit"
 alias nvide="neovide --multigrid"
-alias bakkes="WINEFSYNC=1 protontricks -c '~/.steam/steam/compatibilitytools.d/GE-Proton7-42/files/bin/wine64 /home/koen/.local/share/Steam/steamapps/compatdata/252950/pfx/drive_c/Program\ Files/BakkesMod/BakkesMod.exe' 252950"
+alias bakkes="WINEESYNC=1 protontricks -c '~/.steam/steam/compatibilitytools.d/GE-Proton7-42/files/bin/wine64 /home/koen/.local/share/Steam/steamapps/compatdata/252950/pfx/drive_c/Program\ Files/BakkesMod/BakkesMod.exe' 252950"
+alias steamui="steam -gamepadui &"
+
+alias to="turbotmux.sh open"
+alias tc="turbotmux.sh close"
+alias tp="turbotmux.sh project"
+alias tn="turbotmux.sh new"
 
 fish_add_path $HOME'/.local/bin/'
 fish_add_path $HOME'/.platformsh/bin'

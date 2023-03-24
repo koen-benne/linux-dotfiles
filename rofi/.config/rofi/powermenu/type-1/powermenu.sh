@@ -67,7 +67,7 @@ run_cmd() {
 			pkexec reboot
 		elif [[ $1 == '--suspend' ]]; then
       # Aaa home dir hardcoded aaaa
-			pkexec bash -c -E 'sleep 0.1 && /home/koen/.scripts/suspend.sh'
+			pkexec bash -c -E 'sleep 0.1 && /home/koen/.local/bin/suspend.sh'
 		elif [[ $1 == '--logout' ]]; then
       pkill dwm
 		fi
