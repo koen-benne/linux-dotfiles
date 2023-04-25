@@ -8,7 +8,7 @@ set -gx FZF_DEFAULT_OPTS "--height 40% --layout=reverse --border"
 set fish_greeting
 
 alias l="ls -la"
-alias xi="sudo xbps-install"
+# alias xi="sudo xbps-install"
 alias xr="sudo xbps-remove"
 alias spt="spotify-tui"
 alias ioslack=$HOME"/.scripts/ioslack.sh & && disown"
@@ -34,3 +34,5 @@ set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 
 source ~/.asdf/asdf.fish
+
+
