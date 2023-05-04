@@ -3,7 +3,7 @@
     "layer": "top",
     "modules-left": ["river/tags"],
     "modules-center": ["river/window"],
-    "modules-right": ["cpu", "memory", "pulseaudio", "backlight", "network", "clock","battery"],
+    "modules-right": ["cpu", "memory", "pulseaudio", "backlight", "clock","battery"],
 
     "pulseaudio": {
       "tooltip": false,

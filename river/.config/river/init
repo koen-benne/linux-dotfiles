@@ -7,6 +7,15 @@ riverctl map normal Mod4 R spawn fuzzel
 # Open browser
 riverctl map normal Mod4 W spawn firefox
 
+# Open file manager
+riverctl map normal Mod4 E spawn pcmanfm
+
+# Suspend
+riverctl map normal Mod4+Shift S spawn "pkexec /home/koen/.local/bin/suspend"
+
+# Open powermenu
+riverctl map normal Mod4 P spawn "/home/koen/.config/eww/dashboard/launch_dashboard"
+
 # Super+Q to close the focused view
 riverctl map normal Mod4 Q close
 
