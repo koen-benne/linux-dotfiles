@@ -3,4 +3,6 @@ swaybg -i $HOME/Backgrounds/bg4.png &
 bash /usr/libexec/polkit-mate-authentication-agent-1 &
 waybar &
 dunst &
+dbus-update-activation-environment --all &
+gnome-keyring-daemon --start --components=secrets &
 /usr/libexec/polkit-mate-authentication-agent-1 &

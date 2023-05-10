@@ -24,7 +24,6 @@ alias tn="turbotmux.sh new"
 alias lg="lazygit"
 
 fish_add_path $HOME"/.local/bin/"
-fish_add_path $HOME"/.platformsh/bin"
 fish_add_path $HOME"/.cargo/bin"
 fish_add_path $HOME"/.asdf/bin"
 
