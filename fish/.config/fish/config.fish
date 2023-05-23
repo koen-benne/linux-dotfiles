@@ -17,10 +17,10 @@ alias steamui="steam -gamepadui &"
 alias nvide="neovide --multigrid"
 
 # tmux stuff
-alias to="turbotmux.sh open"
-alias tc="turbotmux.sh close"
-alias tp="turbotmux.sh project"
-alias tn="turbotmux.sh new"
+alias to="turbotmux open"
+alias tc="turbotmux close"
+alias tp="turbotmux project"
+alias tn="turbotmux new"
 alias lg="lazygit"
 
 fish_add_path $HOME"/.local/bin/"
