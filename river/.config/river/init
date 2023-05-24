@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 
 # riverctl map normal Mod4 Return spawn kitty
 riverctl map normal Mod4 Return spawn footclient
@@ -15,13 +15,13 @@ riverctl map normal Mod4 E spawn pcmanfm
 riverctl map normal Mod4+Shift S spawn "pkexec /home/koen/.local/bin/suspend"
 
 # Open powermenu
-riverctl map normal Mod4 P spawn "/home/koen/.config/eww/dashboard/launch_dashboard"
+# riverctl map normal Mod4 P spawn "/home/koen/.config/eww/dashboard/launch_dashboard"
 
 # Screeshot whole screen
 riverctl map normal Mod4+Shift G spawn grim
 
 # Screenshot selection
-riverctl map normal Mod4 G spawn "grim -g $(slurp)"
+riverctl map normal Mod4 G spawn "grim -g \$(slurp)"
 
 # Super+Q to close the focused view
 riverctl map normal Mod4 Q close
