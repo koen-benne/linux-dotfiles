@@ -88,3 +88,4 @@ function fish_prompt
 
     echo -n -s $arrow ' '$cwd $repo_info $normal ' '
 end
+

@@ -12,9 +12,10 @@ alias l="ls -la"
 alias xr="sudo xbps-remove"
 alias spt="spotify-tui"
 alias ioslack=$HOME"/.scripts/ioslack.sh & && disown"
-alias bakkes="WINEESYNC=1 protontricks -c '~/.steam/steam/compatibilitytools.d/GE-Proton7-42/files/bin/wine64 /home/koen/.local/share/Steam/steamapps/compatdata/252950/pfx/drive_c/Program\ Files/BakkesMod/BakkesMod.exe' 252950"
+alias bakkes="protontricksfp -c '~/.var/app/com.valvesoftware.Steam/.steam/steam/compatibilitytools.d/GE-Proton7-42/files/bin/wine64 /home/koen/.local/share/Steam/steamapps/compatdata/252950/pfx/drive_c/Program\ Files/BakkesMod/BakkesMod.exe' 252950"
 alias steamui="steam -gamepadui &"
 alias nvide="neovide --multigrid"
+alias protontricksfp='flatpak run com.github.Matoking.protontricks'
 
 # tmux stuff
 alias to="turbotmux open"
