@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cd ~/.local/pkgs/void-packages
+git pull
+./xbps-src update-sys

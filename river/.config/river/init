@@ -11,6 +11,9 @@ riverctl map normal Mod4 W spawn firefox
 # Open file manager
 riverctl map normal Mod4 E spawn dolphin
 
+# Open install manager
+riverctl map normal Mod4 I spawn "/home/koen/.local/bin/xl"
+
 # Suspend
 riverctl map normal Mod4+Shift S spawn "pkexec /home/koen/.local/bin/suspend"
 
