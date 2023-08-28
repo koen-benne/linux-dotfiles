@@ -11,6 +11,9 @@ riverctl map normal Mod4 W spawn firefox
 # Open file manager
 riverctl map normal Mod4 E spawn dolphin
 
+# Open steam gamepad ui
+riverctl map normal Mod4 S spawn "flatpak run com.valvesoftware.Steam -gamepadui"
+
 # Open install manager
 riverctl map normal Mod4 I spawn "/home/koen/.local/bin/xl"
 
@@ -133,12 +136,10 @@ riverctl map passthrough Mod4 F11 enter-mode normal
 # not have a modifier
 for mode in normal locked
 do
-    # Control pulse audio volume with pamixer (https://github.com/cdemoulins/pamixer)
     riverctl map $mode None XF86AudioRaiseVolume  spawn 'pamixer -i 5'
     riverctl map $mode None XF86AudioLowerVolume  spawn 'pamixer -d 5'
     riverctl map $mode None XF86AudioMute         spawn 'pamixer --toggle-mute'
 
-    # Control MPRIS aware media players with playerctl (https://github.com/altdesktop/playerctl)
     riverctl map $mode None XF86AudioMedia spawn 'playerctl play-pause'
     riverctl map $mode None XF86AudioPlay  spawn 'playerctl play-pause'
     riverctl map $mode None XF86AudioPrev  spawn 'playerctl previous'
@@ -147,8 +148,10 @@ done
 
 # Set background and border color
 riverctl background-color 0x002b36
-riverctl border-color-focused 0x93a1a1
-riverctl border-color-unfocused 0x586e75
+riverctl border-color-focused 0xca714e
+riverctl border-color-unfocused 0x00000000
+
+riverctl
 
 # Set keyboard repeat rate
 riverctl set-repeat 50 300

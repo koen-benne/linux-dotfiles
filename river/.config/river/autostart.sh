@@ -3,6 +3,10 @@ swaybg -i $HOME/Backgrounds/bg4.png &
 bash /usr/libexec/polkit-mate-authentication-agent-1 &
 waybar &
 dunst &
+pipewire &
+wireplumber &
+pipewire-pulse &
+pipewire-media-session &
 foot --server &
 dbus-update-activation-environment --all &
 gnome-keyring-daemon --start --components=secrets &

@@ -20,9 +20,10 @@ if [ "$pkg" ]; then
         if [[ -d "$pkg" ]] then
             cd "$DIR1" || exit
             notify-send -t 60000 "installing $pkg, Please be patient"
-            ./xbps-src pkg "$pkg" && pkexec xbps-install -Sy --repository hostdir/binpkgs "$pkg"
+            ./xbps-src pkg "$pkg"
+            pkexec xbps-install -y --repository="$DIR1"hostdir/binpkgs "$pkg"
             if [ $? -ne 0 ]; then
-              ./xbps-src pkg "$pkg" && pkexec xbps-install -Sy --repository hostdir/binpkgs/nonfree "$pkg"
+              pkexec xbps-install -y --repository="$DIR1"/hostdir/binpkgs/nonfree "$pkg"
             fi
         else
             notify-send "Not found"

@@ -1,5 +1,5 @@
 #!/bin/env bash
-# fast tmuxing
+# turbo tmuxing
 
 tmux_running=$(pgrep tmux)
 
