@@ -37,3 +37,7 @@ set -gx PATH "$PNPM_HOME" $PATH
 source ~/.asdf/asdf.fish
 
 
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

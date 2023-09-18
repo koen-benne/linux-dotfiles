@@ -1,9 +1,9 @@
 {
-  "gtk-layer-shell": false,
+    "gtk-layer-shell": false,
     "layer": "top",
     "modules-left": ["river/tags"],
     "modules-center": ["river/window"],
-    "modules-right": ["cpu", "memory", "pulseaudio", "backlight", "clock","battery"],
+    "modules-right": ["cpu", "memory", "pulseaudio", "network", "clock"],
 
     "pulseaudio": {
       "tooltip": false,
@@ -14,8 +14,8 @@
         "default": ["奄", "奔", "墳"]
       },
       "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
-      "on-scroll-up": "pamixer -i 5 && notify-volume",
-      "on-scroll-down": "pamixer -d 5 && notify-volume",
+      "on-scroll-up": "pamixer -i 5",
+      "on-scroll-down": "pamixer -d 5",
     },
     "wlr/workspaces": {
       "sort-by-name": true,
@@ -61,54 +61,24 @@
       "tooltip-format": "MPD (connected)",
       "tooltip-format-disconnected": "MPD (disconnected)"
     },
-
     "network": {
+      "interface": "enp4s0",
+      // "interface": "wlp3s0",
       "tooltip": false,
       "format": "{icon}",
       "format-alt": "{ipaddr} {icon}",
-      "format-alt-click": "click-right",
-      "format-icons": {
-        "wifi": [" "],
-        "ethernet": [" "],
-        "disconnected": ["睊"],
-      },
-      "on-click": "foot -e nmtui",
-    },
-    "backlight": {
-      /*	"tooltip": false,
-          "format": " {}%",
-          "interval":1,
-          "on-scroll-up": "brightnessctl s +5%",
-          "on-scroll-down": "brightnessctl s 5%-" */
-      "interval": 2,
-      "align": 0,
-      "rotate": 0,
-      "format": "{icon} {percent}%",
-      "format-icons": ["", "", "", ""],
-      "on-click": "toggle-wlsunset",
-      "on-scroll-up": "brightnessctl s +5%",
-      "on-scroll-down": "brightnessctl s 5%-",
-      "smooth-scrolling-threshold": 1,
-    },
-    "battery": {
-      "states": {
-        "good": 95,
-        "warning": 30,
-        "critical": 20
-      },
-      "format": "{icon}  {capacity}%",
-      "format-charging": " {capacity}%",
-      "format-plugged": " {capacity}%",
-      "format-alt": "{time} {icon}",
-      "format-icons": ["", "", "", "", ""]
+      "format-wifi": "  {essid} ({signalStrength}%)",
+      "format-ethernet": " {ifname}",
+      "format-disconnected": "睊",
+      "max-length": 50
     },
     "tray":{
       "icon-size":18,
       "spacing": 10
     },
     "clock": {
-      "format": "{: %I:%M %p }",
-      "format-alt": "{: %I:%M %p   %d/%m/%Y}"
+     "format": "{: %H:%M }",
+     "format-alt": "{: %H:%M %p   %d/%m/%Y}"
     },
     "cpu": {
       "interval": 15,
