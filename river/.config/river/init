@@ -9,7 +9,7 @@ riverctl map normal Mod4 R spawn fuzzel
 riverctl map normal Mod4 W spawn firefox
 
 # Open file manager
-riverctl map normal Mod4 E spawn dolphin
+riverctl map normal Mod4 E spawn pcmanfm
 
 # Open steam gamepad ui
 riverctl map normal Mod4 S spawn "flatpak run com.valvesoftware.Steam -gamepadui"
