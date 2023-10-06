@@ -24,20 +24,27 @@ alias tp="turbotmux project"
 alias tn="turbotmux new"
 
 alias lg="lazygit"
+alias gu="gitui"
 
 fish_add_path $HOME"/.local/bin/"
 fish_add_path $HOME"/.cargo/bin"
-fish_add_path $HOME"/.asdf/bin"
+# fish_add_path $HOME"/.asdf/bin"
 
 # pnpm
 set -gx PNPM_HOME $HOME"/.local/share/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 
-source ~/.asdf/asdf.fish
+# source ~/.asdf/asdf.fish
 
+# nix shit
+alias shell="export NIXPKGS_ALLOW_INSECURE=1 && nix shell --impure"
 
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# zoxide
+zoxide init fish | source
+alias cd="z"

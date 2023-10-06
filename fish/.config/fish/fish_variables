@@ -1,5 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export SSH_AGENT_PID:13053
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXQBFm57/agent\x2e13052
+SETUVAR SSH_KEYS_TO_AUTOLOAD:/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:FFC473
 SETUVAR fish_color_cancel:\x2d\x2dreverse
