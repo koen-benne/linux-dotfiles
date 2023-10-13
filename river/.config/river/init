@@ -6,7 +6,7 @@ riverctl map normal Mod4 Return spawn footclient
 riverctl map normal Mod4 R spawn fuzzel
 
 # Open browser
-riverctl map normal Mod4 W spawn firefox
+riverctl map normal Mod4 W spawn brave
 
 # Open file manager
 riverctl map normal Mod4 E spawn pcmanfm

@@ -1,8 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export SSH_AGENT_PID:13053
-SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXQBFm57/agent\x2e13052
-SETUVAR SSH_KEYS_TO_AUTOLOAD:/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket
+SETUVAR --export SSH_AGENT_PID:12185
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXX5xKqgZ/agent\x2e12184
+SETUVAR SSH_KEYS_TO_AUTOLOAD:/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket\x1e/home/koen/\x2essh/github\x1e/home/koen/\x2essh/gitlab\x1e/home/koen/\x2essh/bitbucket
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:FFC473
 SETUVAR fish_color_cancel:\x2d\x2dreverse
@@ -43,4 +43,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/koen/\x2easdf/bin\x1e/home/koen/\x2ecargo/bin\x1e/home/koen/\x2elocal/bin\x1e/home/koen/\x2eplatformsh/bin
+SETUVAR fish_user_paths:/home/koen/\x2enix\x2dprofile/bin\x1e/home/koen/\x2easdf/bin\x1e/home/koen/\x2ecargo/bin\x1e/home/koen/\x2elocal/bin\x1e/home/koen/\x2eplatformsh/bin
