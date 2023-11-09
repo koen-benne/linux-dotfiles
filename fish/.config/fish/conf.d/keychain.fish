@@ -5,5 +5,5 @@ if status is-login
     set -Ua SSH_KEYS_TO_AUTOLOAD ~/.ssh/github
     set -Ua SSH_KEYS_TO_AUTOLOAD ~/.ssh/gitlab
     set -Ua SSH_KEYS_TO_AUTOLOAD ~/.ssh/bitbucket
-    keychain --eval $SSH_KEYS_TO_AUTOLOAD | source
+    keychain --quiet --eval $SSH_KEYS_TO_AUTOLOAD | source
 end

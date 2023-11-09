@@ -46,5 +46,4 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 # zoxide
-zoxide init fish | source
-alias cd="z"
+zoxide init --cmd cd fish | source
