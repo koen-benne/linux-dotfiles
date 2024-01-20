@@ -4,6 +4,7 @@ end
 
 set -gx EDITOR nvim
 set -gx FZF_DEFAULT_OPTS "--height 40% --layout=reverse --border"
+set -gx GPG_TTY $(tty)
 
 set fish_greeting
 
@@ -15,7 +16,8 @@ alias ioslack=$HOME"/.scripts/ioslack.sh & && disown"
 alias bakkes="protontricksfp -c '~/.var/app/com.valvesoftware.Steam/.steam/steam/compatibilitytools.d/GE-Proton7-42/files/bin/wine64 /home/koen/.local/share/Steam/steamapps/compatdata/252950/pfx/drive_c/Program\ Files/BakkesMod/BakkesMod.exe' 252950"
 alias steamui="flatpak run com.valvesoftware.Steam -gamepadui &"
 alias nvide="neovide --multigrid"
-alias protontricksfp='flatpak run com.github.Matoking.protontricks'
+alias protontricksfp="flatpak run com.github.Matoking.protontricks"
+alias gpg-reload="keychain --clear --agents gpg"
 
 # tmux stuff
 alias to="turbotmux open"
@@ -28,6 +30,7 @@ alias gu="gitui"
 
 fish_add_path $HOME"/.local/bin/"
 fish_add_path $HOME"/.cargo/bin"
+fish_add_path $HOME"/go/bin"
 # fish_add_path $HOME"/.asdf/bin"
 
 # pnpm

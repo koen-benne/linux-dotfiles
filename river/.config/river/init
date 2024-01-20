@@ -5,8 +5,11 @@ riverctl map normal Mod4 Return spawn footclient
 
 riverctl map normal Mod4 R spawn fuzzel
 
+riverctl map normal Mod4+Shift R spawn "rofi -show window"
+
 # Open browser
-riverctl map normal Mod4 W spawn brave
+# riverctl map normal Mod4 W spawn brave
+riverctl map normal Mod4 W spawn "firefox"
 
 # Open file manager
 riverctl map normal Mod4 E spawn pcmanfm
@@ -22,6 +25,9 @@ riverctl map normal Mod4+Shift S spawn "pkexec /home/koen/.local/bin/suspend"
 
 # Open powermenu
 # riverctl map normal Mod4 P spawn "/home/koen/.config/eww/dashboard/launch_dashboard"
+
+# Open passmenu
+riverctl map normal Mod4 P spawn "~/.local/bin/passmenu"
 
 # Screeshot whole screen
 riverctl map normal Mod4+Shift G spawn "grim ~/Images/\$(date +'%s_grim.png')"
@@ -159,10 +165,12 @@ riverctl set-repeat 50 300
 # Make certain views start floating
 riverctl float-filter-add app-id float
 riverctl float-filter-add title "popup title with spaces"
+riverctl float-filter-add title "Floorp - Sharing Indicator"
 
 # Set app-ids and titles of views which should use client side decorations
 riverctl csd-filter-add app-id "gedit"
 riverctl csd-filter-add app-id "bar"
+riverctl csd-filter-add title "Floorp - Sharing Indicator"
 
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.

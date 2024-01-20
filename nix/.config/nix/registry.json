@@ -1,0 +1,16 @@
+{
+  "flakes": [
+    {
+      "from": {
+        "id": "node",
+        "type": "indirect"
+      },
+      "to": {
+        "owner": "andyrichardson",
+        "repo": "nix-node",
+        "type": "github"
+      }
+    }
+  ],
+  "version": 2
+}
