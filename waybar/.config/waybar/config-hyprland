@@ -1,7 +1,7 @@
 {
     "gtk-layer-shell": false,
     "layer": "top",
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["cpu", "memory", "pulseaudio", "network", "clock"],
 

@@ -11,6 +11,9 @@ riverctl map normal Mod4+Shift R spawn "rofi -show window"
 # riverctl map normal Mod4 W spawn brave
 riverctl map normal Mod4 W spawn "flatpak run io.gitlab.librewolf-community"
 
+# Restart waybar
+riverctl map normal Mod4+Shift W spawn "pkill waybar && waybar"
+
 # Open file manager
 riverctl map normal Mod4 E spawn pcmanfm
 
@@ -172,8 +175,23 @@ riverctl csd-filter-add app-id "gedit"
 riverctl csd-filter-add app-id "bar"
 riverctl csd-filter-add title "Floorp - Sharing Indicator"
 
+####### THE FUTURE WAY TO DO THINGS (0.3) #######
+
+# Make certain views start floating
+# riverctl rule-add -title "Floorp - Sharing Indicator" float
+
+# Set app-ids and titles of views which should use client side decorations
+# riverctl rule-add -app-id "gedit" csd
+# riverctl rule-add -app-id "Floorp - Sharing Indicator" csd
+
+# Give certain apps a specific tag
+# riverctl rule-add -app-id "Spotify" tag 9
+
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
+
+####### THE FUTURE WAY TO DO THINGS (0.3) #######
+
 riverctl default-layout rivertile
 
 # Run autostart script
