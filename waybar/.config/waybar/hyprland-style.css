@@ -1,115 +1,127 @@
 * {
-    border:        none;
-    border-radius: 0;
-    font-family:   "JetBrainsMonoNL Nerd Font";
-    font-size:     15px;
-    box-shadow:    none;
-    text-shadow:   none;
-    transition-duration: 0s;
-}
-
-window {
-    color:      rgba(217, 216, 216, 1);
-    background: rgba(35, 31, 32, 0.00);
+  border: none;
+  border-radius: 0px;
+  font-family: "JetBrainsMonoNL Nerd Font";
+  font-weight: bold;
+  font-size: 18px;
+  min-height: 10px;
 }
 
 window#waybar {
-    color:      rgba(217, 216, 216, 1);
-    background: rgba(35, 31, 32, 0.4);
+  background: rgba(35, 31, 32, 0.00);
 }
 
-window#waybar.hidden {
-    opacity: 0.2;
-}
-
-#workspaces {
-    margin: 0 5px;
+tooltip {
+  background: rgba(35, 31, 32, 0.00);
+  color:      rgba(217, 216, 216, 1);
+  border-radius: 7px;
+  border-width: 0px;
 }
 
 #workspaces button {
-    padding:    0 5px;
-    color:      rgba(217, 216, 216, 0.4);
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 9px;
+  padding: 3px 3px;
+  color: #dfd2c4;
+  animation: ws_normal 20s ease-in-out 1;
 }
 
-#workspaces button.visible {
-    color:      rgba(217, 216, 216, 1);
+#workspaces button.active {
+  background: #ca714e;
+  color: #dfd2c4;
+  margin-left: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 3px;
+  animation: ws_active 20s ease-in-out 1;
+  transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
-#workspaces button.focused {
-    border-top: 3px solid rgba(217, 216, 216, 1);
-    border-bottom: 3px solid rgba(217, 216, 216, 0);
-}
-
-#workspaces button.urgent {
-    color:      rgba(238, 46, 36, 1);
-}
-
-#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-spotify, #custom-weather, #custom-mail {
-    margin:     0px 6px 0px 10px;
-    min-width:  25px;
-}
-
-#clock {
-    margin:     0px 16px 0px 10px;
-    min-width:  140px;
-}
-
-#battery.warning {
-   color:       rgba(255, 210, 4, 1);
-}
-
-#battery.critical {
-    color:      rgba(238, 46, 36, 1);
-}
-
-#battery.charging {
-    color:      rgba(217, 216, 216, 1);
-}
-
-#custom-storage.warning {
-    color:      rgba(255, 210, 4, 1);
-}
-
-#custom-storage.critical {
-    color:      rgba(238, 46, 36, 1);
-}
-
-#tags button {
-	min-width: 20px;
-	transition: none;
-	color: #dfd2c4;
-	font-size: 16px;
-}
-
-#tags button.occupied {
-	transition: none;
-	color: #c5663d;
-	font-size: 4px;
-}
-
-#tags button.focused {
-	color: #dfd2c4;
-  border-bottom: 2px solid #cc8a5e;
-}
-
-#tags button.focused.occupied {
-	color: #cc8a5e;
-}
-
-#tags button:hover {
-	transition: none;
-	box-shadow: inherit;
-	text-shadow: inherit;
-	color: #ffffee;
-  border-color: #ffffee;
+#workspaces button:hover {
+  background: #cc8a5e;
   color: #ffffee;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
-#tags button.focused:hover {
-    color: #ffffee;
+#taskbar button {
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 9px;
+  padding: 3px 3px;
+  color: #dfd2c4;
+  animation: ws_normal 20s ease-in-out 1;
+  animation: tb_normal 20s ease-in-out 1;
 }
 
-#tags button.urgent {
-    border-top: 2px solid #fb4934;
-    border-bottom: 2px solid #fb4934;
+#taskbar button.active {
+  background: #ca714e;
+  color: #dfd2c4;
+  margin-left: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 3px;
+  animation: tb_active 20s ease-in-out 1;
+  transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
+
+#taskbar button:hover {
+  background: #cc8a5e;
+  color: #ffffee;
+  animation: tb_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#backlight,
+#battery,
+#bluetooth,
+#clock,
+#cpu,
+#idle_inhibitor,
+#language,
+#memory,
+#mpris,
+#network,
+#pulseaudio,
+#tray {
+  background: rgba(35, 31, 32, 0.00);
+  color:      rgba(217, 216, 216, 1);
+  opacity: 1;
+  margin: 6px 0px;
+  padding: 0 10px;
+}
+
+#workspaces,
+#taskbar {
+  margin: 6px 0px;
+  padding: 0 6px;
+}
+
+#window {
+  margin: 6px 0px;
+}
+
+
+.modules-left {
+  margin-top: 4px;
+  border-radius: 10px;
+  margin-left: 20px;
+  background: rgba(35, 31, 32, 0.50);
+  padding: 0 10px;
+}
+
+.modules-center {
+  margin-top: 4px;
+  border-radius: 10px;
+  background: rgba(35, 31, 32, 0.50);
+}
+
+.modules-right {
+  padding-left: 10px;
+  margin-top: 4px;
+  border-radius: 10px;
+  margin-right: 20px;
+  background: rgba(35, 31, 32, 0.50);
+}
+
