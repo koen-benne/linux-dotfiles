@@ -104,7 +104,7 @@ tooltip {
 
 
 .modules-left {
-  margin-top: 4px;
+  margin-top: 8px;
   border-radius: 10px;
   margin-left: 20px;
   background: rgba(35, 31, 32, 0.50);
@@ -112,14 +112,14 @@ tooltip {
 }
 
 .modules-center {
-  margin-top: 4px;
+  margin-top: 8px;
   border-radius: 10px;
   background: rgba(35, 31, 32, 0.50);
 }
 
 .modules-right {
   padding-left: 10px;
-  margin-top: 4px;
+  margin-top: 8px;
   border-radius: 10px;
   margin-right: 20px;
   background: rgba(35, 31, 32, 0.50);
