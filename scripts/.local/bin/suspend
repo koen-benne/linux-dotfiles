@@ -41,7 +41,12 @@ test -w /sys/power/state || fail "sleep permission denied"
 (
 flock -n 9 || fail "another instance of zzz is running"
 
+## custom stuff ##
+
+swaylock
 sudo -u koen openrgb --profile off.orp
+
+##################
 
 printf "Zzzz... "
 
